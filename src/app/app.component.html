@@ -1,1 +1,6 @@
-<p>Hello wrld!!</p>
+
+<input (keyup)="onChangeLogo($event)" [value]="logo">
+<img [src]="logo">
+<p>Hello {{name.toUpperCase()}}</p>
+<p>Hello {{getName()}}</p>
+<p>I am {{getAge()}} years old</p>
