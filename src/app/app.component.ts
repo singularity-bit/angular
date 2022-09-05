@@ -21,5 +21,8 @@ export class AppComponent{
   onChangeLogo(event:KeyboardEvent){
     this.logo=(event.target as HTMLInputElement).value
   }
+  logImg(event:string){
+    console.log('clicked child',event)
+  }
 
 }
