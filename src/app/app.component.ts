@@ -8,6 +8,11 @@ export class AppComponent {
   name = 'q-singularity'
   age = '24'
   logo = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
+  images = [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png'
+  ]
   currentDate = new Date()
   cost = 2000
   temperature = 25.3
@@ -15,6 +20,9 @@ export class AppComponent {
     toppings: ['pepperoni', 'bacon'],
     size: 'large'
   }
+  blueClass = false
+  fontSize = 16
+
 
   getName() {
     return this.name

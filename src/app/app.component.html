@@ -1,11 +1,20 @@
 
+<!-- this replaces the ng-template conditional rendering , check more on directives-->
+<p *ngIf="blueClass">button is blue.</p>
+
+
+<button (click)="blueClass=!blueClass" 
+    [ngClass]="{ blue:blueClass }" 
+    [ngStyle]="{'font-size.px':fontSize}">change color</button>
+<hr>
 <input (keyup)="onChangeLogo($event)" [value]="logo">
 
-<app-post [img]="logo" (imgSelected)="logImg($event)">
+<app-post *ngFor="let image of images; let i =index" [img]="image" (imgSelected)="logImg($event)">
     <p>
-        some action
+       {{i}} some caption
     </p>
 </app-post>
+
 
 <p>Hello {{name | titlecase}}</p>
 <p>Hello {{getName()}}</p>
